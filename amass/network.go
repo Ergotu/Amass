@@ -16,7 +16,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/Ergotu/Amass/amass/utils"
 )
 
 // ASRecord stores all autonomous system information needed by Amass

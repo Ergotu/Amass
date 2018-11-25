@@ -9,9 +9,9 @@ import (
 	"os"
 	"path"
 
-	"github.com/OWASP/Amass/amass"
-	"github.com/OWASP/Amass/amass/handlers"
-	"github.com/OWASP/Amass/amass/utils/viz"
+	"github.com/Ergotu/Amass/amass"
+	"github.com/Ergotu/Amass/amass/handlers"
+	"github.com/Ergotu/Amass/amass/utils/viz"
 )
 
 var (

@@ -4,7 +4,7 @@
 package amass
 
 import (
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/Ergotu/Amass/amass/utils"
 )
 
 // AddressService is the AmassService that handles all newly discovered IP addresses

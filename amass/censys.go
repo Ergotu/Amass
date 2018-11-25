@@ -8,7 +8,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/Ergotu/Amass/amass/utils"
 )
 
 // Censys is the AmassService that handles access to the Censys data source.

@@ -36,14 +36,14 @@ parts:
 
   amass:
     after: [go]
-    source: https://github.com/OWASP/Amass
+    source: https://github.com/Ergotu/Amass
     source-type: git
     plugin: go
-    go-importpath: github.com/OWASP/Amass
+    go-importpath: github.com/Ergotu/Amass
     override-build: |
       echo "\nStarting override-build for amass part:"
       export GOPATH=$(dirname $SNAPCRAFT_PART_INSTALL)/go
-      cd $GOPATH/src/github.com/OWASP/Amass
+      cd $GOPATH/src/github.com/Ergotu/Amass
       go get -u ./...
       go install ./...
       mkdir $SNAPCRAFT_PART_INSTALL/bin
@@ -52,14 +52,14 @@ parts:
 
   netdomains:
     after: [amass]
-    source: https://github.com/OWASP/Amass
+    source: https://github.com/Ergotu/Amass
     source-type: git
     plugin: go
-    go-importpath: github.com/OWASP/Amass
+    go-importpath: github.com/Ergotu/Amass
     override-build: |
       echo "\nStarting override-build for netdomains part:"
       export GOPATH=$(dirname $SNAPCRAFT_PART_INSTALL)/go
-      cd $GOPATH/src/github.com/OWASP/Amass
+      cd $GOPATH/src/github.com/Ergotu/Amass
       go get -u ./...
       go install ./...
       mkdir $SNAPCRAFT_PART_INSTALL/bin
@@ -68,14 +68,14 @@ parts:
 
   viz:
     after: [amass]
-    source: https://github.com/OWASP/Amass
+    source: https://github.com/Ergotu/Amass
     source-type: git
     plugin: go
-    go-importpath: github.com/OWASP/Amass
+    go-importpath: github.com/Ergotu/Amass
     override-build: |
       echo "\nStarting override-build for viz part:"
       export GOPATH=$(dirname $SNAPCRAFT_PART_INSTALL)/go
-      cd $GOPATH/src/github.com/OWASP/Amass
+      cd $GOPATH/src/github.com/Ergotu/Amass
       go get -u ./...
       go install ./...
       mkdir $SNAPCRAFT_PART_INSTALL/bin
@@ -84,14 +84,14 @@ parts:
   
   db:
     after: [amass]
-    source: https://github.com/OWASP/Amass
+    source: https://github.com/Ergotu/Amass
     source-type: git
     plugin: go
-    go-importpath: github.com/OWASP/Amass
+    go-importpath: github.com/Ergotu/Amass
     override-build: |
       echo "\nStarting override-build for db part:"
       export GOPATH=$(dirname $SNAPCRAFT_PART_INSTALL)/go
-      cd $GOPATH/src/github.com/OWASP/Amass
+      cd $GOPATH/src/github.com/Ergotu/Amass
       go get -u ./...
       go install ./...
       mkdir $SNAPCRAFT_PART_INSTALL/bin

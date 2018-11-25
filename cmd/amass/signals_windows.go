@@ -10,7 +10,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/OWASP/Amass/amass"
+	"github.com/Ergotu/Amass/amass"
 )
 
 // If the user interrupts the program, print the summary information

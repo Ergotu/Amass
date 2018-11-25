@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/Ergotu/Amass/amass/utils"
 )
 
 // Yahoo is the AmassService that handles access to the Yahoo data source.

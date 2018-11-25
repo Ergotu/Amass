@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/Ergotu/Amass/amass/utils"
 )
 
 // Baidu is the AmassService that handles access to the Baidu data source.

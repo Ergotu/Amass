@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/Ergotu/Amass/amass/utils"
 )
 
 // Google is the AmassService that handles access to the Google search engine data source.

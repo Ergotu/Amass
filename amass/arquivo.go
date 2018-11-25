@@ -4,7 +4,7 @@
 package amass
 
 import (
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/Ergotu/Amass/amass/utils"
 )
 
 // Arquivo is the AmassService that handles access to the Arquivo data source.

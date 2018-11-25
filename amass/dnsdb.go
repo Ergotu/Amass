@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/Ergotu/Amass/amass/utils"
 )
 
 // DNSDB is the AmassService that handles access to the DNSDB data source.

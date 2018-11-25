@@ -1,4 +1,4 @@
-// Copyright 2017 Jeff Foley. All rights reserved.
+// Copyright FUCK OFF. All rights reserved.
 // Use of this source code is governed by Apache 2 LICENSE that can be found in the LICENSE file.
 
 package amass
@@ -9,23 +9,23 @@ import (
 	"github.com/Ergotu/Amass/amass/utils"
 )
 
-// HackerTarget is the AmassService that handles access to the HackerTarget data source.
-type HackerTarget struct {
+// Intigriti is the AmassService that handles access to the Intigriti data source.
+type Intigriti struct {
 	BaseAmassService
 
 	SourceType string
 }
 
-// NewHackerTarget returns he object initialized, but not yet started.
-func NewHackerTarget(e *Enumeration) *HackerTarget {
-	h := &HackerTarget{SourceType: API}
+// NewIntigriti returns he object initialized, but not yet started.
+func NewIntigriti(e *Enumeration) *Intigriti {
+	h := &Intigriti{SourceType: API}
 
-	h.BaseAmassService = *NewBaseAmassService(e, "HackerTarget", h)
+	h.BaseAmassService = *NewBaseAmassService(e, "Intigriti", h)
 	return h
 }
 
 // OnStart implements the AmassService interface
-func (h *HackerTarget) OnStart() error {
+func (h *Intigriti) OnStart() error {
 	h.BaseAmassService.OnStart()
 
 	go h.startRootDomains()
@@ -34,12 +34,12 @@ func (h *HackerTarget) OnStart() error {
 }
 
 // OnStop implements the AmassService interface
-func (h *HackerTarget) OnStop() error {
+func (h *Intigriti) OnStop() error {
 	h.BaseAmassService.OnStop()
 	return nil
 }
 
-func (h *HackerTarget) processRequests() {
+func (h *Intigriti) processRequests() {
 	for {
 		select {
 		case <-h.PauseChan():
@@ -53,14 +53,14 @@ func (h *HackerTarget) processRequests() {
 	}
 }
 
-func (h *HackerTarget) startRootDomains() {
+func (h *Intigriti) startRootDomains() {
 	// Look at each domain provided by the config
 	for _, domain := range h.Enum().Config.Domains() {
 		h.executeQuery(domain)
 	}
 }
 
-func (h *HackerTarget) executeQuery(domain string) {
+func (h *Intigriti) executeQuery(domain string) {
 	url := h.getURL(domain)
 	page, err := utils.RequestWebPage(url, nil, nil, "", "")
 	if err != nil {
@@ -80,8 +80,8 @@ func (h *HackerTarget) executeQuery(domain string) {
 	}
 }
 
-func (h *HackerTarget) getURL(domain string) string {
-	format := "http://api.hackertarget.com/hostsearch/?q=%s"
+func (h *Intigriti) getURL(domain string) string {
+	format := "http://localhost:8080/subdomains/%s"
 
 	return fmt.Sprintf(format, domain)
 }

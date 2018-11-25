@@ -1,4 +1,4 @@
-module github.com/OWASP/Amass/amass
+module github.com/Ergotu/Amass/amass
 
 require (
 	github.com/PuerkitoBio/fetchbot v1.1.2

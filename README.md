@@ -1,13 +1,13 @@
 
-# [![OWASP Logo](https://github.com/OWASP/Amass/blob/master/images/owasp_logo.png) OWASP Amass](https://www.owasp.org/index.php/OWASP_Amass_Project)
+# [![OWASP Logo](https://github.com/Ergotu/Amass/blob/master/images/owasp_logo.png) OWASP Amass](https://www.owasp.org/index.php/OWASP_Amass_Project)
 
-[![GitHub Issues](https://img.shields.io/github/issues/OWASP/Amass.svg)](https://github.com/OWASP/Amass/issues) 
+[![GitHub Issues](https://img.shields.io/github/issues/OWASP/Amass.svg)](https://github.com/Ergotu/Amass/issues) 
 [![CircleCI Status](https://circleci.com/gh/OWASP/Amass/tree/master.svg?style=shield)](https://circleci.com/gh/OWASP/Amass/tree/master)
 [
-![GitHub tag](https://img.shields.io/github/tag/OWASP/Amass.svg)](https://github.com/OWASP/Amass/tags) 
+![GitHub tag](https://img.shields.io/github/tag/OWASP/Amass.svg)](https://github.com/Ergotu/Amass/tags) 
 [![Go Version](https://img.shields.io/badge/go-1.10-blue.svg)](https://golang.org/dl/) 
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) 
-[![Contribute Yes](https://img.shields.io/badge/contribute-yes-brightgreen.svg)](https://github.com/OWASP/Amass/blob/master/CONTRIBUTING.md) 
+[![Contribute Yes](https://img.shields.io/badge/contribute-yes-brightgreen.svg)](https://github.com/Ergotu/Amass/blob/master/CONTRIBUTING.md) 
 [![Chat on Discord](https://img.shields.io/discord/433729817918308352.svg?logo=discord)](https://discord.gg/rtN8GMd) 
 
 
@@ -17,7 +17,7 @@ The OWASP Amass tool suite obtains subdomain names by scraping data sources, rec
 
 ----
 
-![Network graph](https://github.com/OWASP/Amass/blob/master/images/network_06092018.png "Amass Network Mapping")
+![Network graph](https://github.com/Ergotu/Amass/blob/master/images/network_06092018.png "Amass Network Mapping")
 
 ## How to Install
 
@@ -25,7 +25,7 @@ The OWASP Amass tool suite obtains subdomain names by scraping data sources, rec
 
 #### Prebuilt
 
-A [precompiled version is available](https://github.com/OWASP/Amass/releases) for each release.
+A [precompiled version is available](https://github.com/Ergotu/Amass/releases) for each release.
 
 If you are on a distribution such as **Kali Linux**, and have never used snap previously, follow these steps to access snap packages:
 ```
@@ -58,7 +58,7 @@ $ sudo snap refresh
 
 1. Build the [Docker](https://docs.docker.com/) image:
 ```
-sudo docker build -t amass https://github.com/OWASP/Amass.git
+sudo docker build -t amass https://github.com/Ergotu/Amass.git
 ```
 
 2. Run the Docker image:
@@ -70,14 +70,14 @@ sudo docker run amass --passive -d example.com
 
 If you would prefer to build your own binary from the latest version of the source code, make sure you have a correctly configured **Go >= 1.10** environment. More information about how to achieve this can be found [on the golang website.](https://golang.org/doc/install) Then, take the following steps:
 
-1. Download [amass](https://github.com/OWASP/Amass/releases):
+1. Download [amass](https://github.com/Ergotu/Amass/releases):
 ```
-$ go get -u github.com/OWASP/Amass/...
+$ go get -u github.com/Ergotu/Amass/...
 ```
 
 2. If you wish to rebuild the binaries from the source code:
 ```
-$ cd $GOPATH/src/github.com/OWASP/Amass
+$ cd $GOPATH/src/github.com/Ergotu/Amass
 
 $ go install ./...
 ```
@@ -86,7 +86,7 @@ At this point, the binaries should be in *$GOPATH/bin*.
 
 3. Several wordlists can be found in the following directory:
 ```
-$ ls $GOPATH/src/github.com/OWASP/Amass/wordlists/
+$ ls $GOPATH/src/github.com/Ergotu/Amass/wordlists/
 ```
 
 ## Using the Tool Suite
@@ -184,7 +184,7 @@ import(
     "math/rand"
     "time"
 
-    "github.com/OWASP/Amass/amass"
+    "github.com/Ergotu/Amass/amass"
 )
 
 func main() {
@@ -217,11 +217,11 @@ $ amass.viz -i owasp.json --maltego owasp.csv
 
 3. Import the CSV file with the correct Connectivity Table settings:
 
-![Connectivity table](https://github.com/OWASP/Amass/blob/master/images/maltego_graph_import_wizard.png "Connectivity Table Settings")
+![Connectivity table](https://github.com/Ergotu/Amass/blob/master/images/maltego_graph_import_wizard.png "Connectivity Table Settings")
 
 4. All the Amass findings will be brought into your Maltego Graph:
 
-![Maltego results](https://github.com/OWASP/Amass/blob/master/images/maltego_results.png "Maltego Results")
+![Maltego results](https://github.com/Ergotu/Amass/blob/master/images/maltego_results.png "Maltego Results")
 
 ## Community
 

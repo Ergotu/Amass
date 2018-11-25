@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/Ergotu/Amass/amass/utils"
 )
 
 // Robtex is the AmassService that handles access to the Robtex data source.

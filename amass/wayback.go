@@ -4,7 +4,7 @@
 package amass
 
 import (
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/Ergotu/Amass/amass/utils"
 )
 
 // Wayback is the AmassService that handles access to the Wayback data source.

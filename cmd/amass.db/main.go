@@ -9,7 +9,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/OWASP/Amass/amass/handlers"
+	"github.com/Ergotu/Amass/amass/handlers"
 )
 
 var (

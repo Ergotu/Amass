@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/Ergotu/Amass/amass/utils"
 )
 
 // IPv4Info is the AmassService that handles access to the IPv4Info data source.

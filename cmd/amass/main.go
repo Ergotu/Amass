@@ -21,8 +21,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/OWASP/Amass/amass"
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/Ergotu/Amass/amass"
+	"github.com/Ergotu/Amass/amass/utils"
 	"github.com/fatih/color"
 )
 
@@ -459,7 +459,7 @@ func printSummary(total int, tags map[string]int, asns map[int]*asnData) {
 	fmt.Fprintln(color.Error)
 	// Print the header information
 	title := "OWASP Amass v"
-	site := "https://github.com/OWASP/Amass"
+	site := "https://github.com/Ergotu/Amass"
 	b.Fprint(color.Error, title+amass.Version)
 	num := 80 - (len(title) + len(amass.Version) + len(site))
 	pad(num, " ")

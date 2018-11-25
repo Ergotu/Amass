@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/Ergotu/Amass/amass/utils"
 )
 
 // DNSDumpster is the AmassService that handles access to the DNSDumpster data source.

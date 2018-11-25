@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/OWASP/Amass/amass/utils/viz"
+	"github.com/Ergotu/Amass/amass/utils/viz"
 )
 
 // Edge represents a graph edge.

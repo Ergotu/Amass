@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/OWASP/Amass/amass"
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/Ergotu/Amass/amass"
+	"github.com/Ergotu/Amass/amass/utils"
 )
 
 var (

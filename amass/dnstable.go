@@ -6,7 +6,7 @@ package amass
 import (
 	"fmt"
 
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/Ergotu/Amass/amass/utils"
 )
 
 // DNSTable is the AmassService that handles access to the DNSTable data source.

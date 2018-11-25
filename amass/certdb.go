@@ -7,7 +7,7 @@ import (
 	"encoding/json"
 	"net/url"
 
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/Ergotu/Amass/amass/utils"
 )
 
 // CertDB is the AmassService that handles access to the CertDB data source.

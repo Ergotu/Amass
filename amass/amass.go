@@ -18,7 +18,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/Ergotu/Amass/amass/utils"
 	"github.com/PuerkitoBio/fetchbot"
 	"github.com/PuerkitoBio/goquery"
 )
@@ -481,39 +481,40 @@ func getDefaultWordlist() ([]string, error) {
 // GetAllSources returns a slice of all data source services, initialized and ready.
 func GetAllSources(e *Enumeration) []AmassService {
 	return []AmassService{
-		NewArchiveIt(e),
-		NewArchiveToday(e),
-		NewArquivo(e),
-		NewAsk(e),
-		NewBaidu(e),
-		NewBing(e),
-		NewCensys(e),
-		NewCertDB(e),
-		NewCertSpotter(e),
-		NewCommonCrawl(e),
-		NewCrtsh(e),
-		//NewDNSDB(e),
-		NewDNSDumpster(e),
-		NewDNSTable(e),
-		NewDogpile(e),
-		NewEntrust(e),
-		NewExalead(e),
-		NewFindSubdomains(e),
-		NewGoogle(e),
-		NewHackerTarget(e),
-		NewIPv4Info(e),
-		NewLoCArchive(e),
-		NewNetcraft(e),
-		NewOpenUKArchive(e),
-		NewPTRArchive(e),
-		NewRiddler(e),
-		NewRobtex(e),
-		NewSiteDossier(e),
-		NewThreatCrowd(e),
-		NewUKGovArchive(e),
-		NewVirusTotal(e),
-		NewWayback(e),
-		NewYahoo(e),
+		/* 		NewArchiveIt(e),
+		   		NewArchiveToday(e),
+		   		NewArquivo(e),
+		   		NewAsk(e),
+		   		NewBaidu(e),
+		   		NewBing(e),
+		   		NewCensys(e),
+		   		NewCertDB(e),
+		   		NewCertSpotter(e),
+		   		NewCommonCrawl(e),
+		   		NewCrtsh(e),
+		   		//NewDNSDB(e),
+		   		NewDNSDumpster(e),
+		   		NewDNSTable(e),
+		   		NewDogpile(e),
+		   		NewEntrust(e),
+		   		NewExalead(e),
+		   		NewFindSubdomains(e),
+		   		NewGoogle(e),
+		   		NewHackerTarget(e),
+		   		NewIPv4Info(e),
+		   		NewLoCArchive(e),
+		   		NewNetcraft(e),
+		   		NewOpenUKArchive(e),
+		   		NewPTRArchive(e),
+		   		NewRiddler(e),
+		   		NewRobtex(e),
+		   		NewSiteDossier(e),
+		   		NewThreatCrowd(e),
+		   		NewUKGovArchive(e),
+		   		NewVirusTotal(e),
+		   		NewWayback(e),
+		   		NewYahoo(e), */
+		NewIntigriti(e),
 	}
 }
 

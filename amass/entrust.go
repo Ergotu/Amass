@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/Ergotu/Amass/amass/utils"
 )
 
 // Entrust is the AmassService that handles access to the Entrust data source.

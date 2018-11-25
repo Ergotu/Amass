@@ -6,7 +6,7 @@ package amass
 import (
 	"fmt"
 
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/Ergotu/Amass/amass/utils"
 )
 
 // Netcraft is the AmassService that handles access to the Netcraft data source.

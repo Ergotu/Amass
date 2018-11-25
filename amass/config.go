@@ -8,7 +8,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/Ergotu/Amass/amass/utils"
 )
 
 // AmassConfig passes along optional Amass enumeration configurations
